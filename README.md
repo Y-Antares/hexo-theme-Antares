@@ -1,8 +1,11 @@
-# Cactus
+---
+typora-root-url: ./..
+---
+# Cactus-Solar
 
-A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal website.
+Cactus is a responsive, clean and simple [Hexo](http://hexo.io) theme for a personal website, and Solar 
 
-:cactus: [Demo](https://probberechts.github.io/hexo-theme-cactus/)
+(～￣▽￣)～​​[Demo](https://yantares.cn)
 
 ![screenshot](https://user-images.githubusercontent.com/2175271/137625287-24a4ac77-fbc9-4c99-a4cd-90455d93d13c.png)
 

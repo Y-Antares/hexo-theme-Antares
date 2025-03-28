@@ -16,7 +16,7 @@ direction: ltr
 nav:
   Home: /
   About: /about/
-  Writing: /archives/
+  Archives: /archives/
   tag: /tags/
   category: /categories/
   Projects: https://github.com/Y-Antares/hexo-theme-Antares
@@ -156,6 +156,10 @@ solar:
     shadow_image: /images/shadow.png
     venus_image: /images/venus.png
 
+# search
+search:
+  path: js/search.json
+  field: post
 
 ##############################################################################
 # Miscellaneous
@@ -171,9 +175,15 @@ open_graph:
   twitter_id:
   google_plus:
 
+# cursor_effect: comet
 
 ##############################################################################
 # Plugins
+plugins:
+    google_analytics: # enter the tracking ID for your Google Analytics
+    markdown-it-katex: # enable KaTeX support
+    twikoo: true
+
 ##############################################################################
 
 # Enable MathJax support for Latex
@@ -187,7 +197,7 @@ disqus:
 
 # Fill in your Utterances data to enable Utterances comments
 utterances:
-  enabled: true
+  enabled: false
   repo: Y-Antares/weblog
   issue_term: pathname
   label: Comment
@@ -196,7 +206,6 @@ utterances:
 # 是否开启访问量统计功能(不蒜子)
 busuanzi:
   enable: true
-
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
@@ -235,3 +244,4 @@ cdn:
   font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
   justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
+
