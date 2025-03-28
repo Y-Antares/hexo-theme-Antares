@@ -1,3 +1,6 @@
+---
+typora-root-url: ./..
+---
 # Solar theme 
 
 ![index](/source/images/Solar.png)

@@ -2,6 +2,7 @@
 @import "_util";
 @import "_mixins";
 @import "_extend";
+@import "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"
 
 global-reset()
 
@@ -17,7 +18,7 @@ html
 body
   color: $color-text
   background-color: $color-background
-  font-size: $font-size
+  font-size: medium
   font-family: $font-family-body
   font-weight: 400
   line-height: $line-height
@@ -43,11 +44,12 @@ body
     hyphens(manual)
 
   a
-    text-decoration: none
     color: $color-text
-    underline(5px, $color-text)
-    &:hover
-      background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link)
+    text-decoration: none
+    
+  a:hover
+    underline(5px, $color-link)
+    background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link)
 
   a.icon
     background: none
@@ -111,9 +113,14 @@ body
 @import "_partial/comments"
 @import "_partial/footer"
 @import "_partial/solar"
-
-// Code
+@import "_partial/pagination"
+@import "_partial/search"
+@import "_partial/tags"
+@import "_partial/tooltip"
+@import "_partial/categories"
 @import "_highlight/" + highlight
+@import "../lib/font-awesome.css
+
 pre
   font-family: $font-family-mono
   font-size: 13px
@@ -143,11 +150,13 @@ pre code
   padding: 10px 15px
   overflow-x: auto
   margin: 1rem 0 1rem 0
+
   figcaption
     zoom: 1
     margin: -5px 0 5px
     font-size: 0.9em
     color: #999
+    
     a
       float: right
     &:before,
@@ -177,5 +186,3 @@ pre code
     border-width: 2px;
     border-color: #fff;
     font-weight: 100;
-
-

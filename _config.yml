@@ -1,14 +1,17 @@
 nav:
-  Home: /home/
+  Home: /
   About: /about/
-  Writing: /archives/
-  Projects: http://github.com/tzvetkov75
+  Archive: /archives/
+  tag: /tags/
+  category: /category/
+  Projects: https://github.com/Y-Antares/hexo-theme-Antares
+  search: /search/
 
-projects_url: http://github.com/tzvetkov75
+projects_url: https://github.com/Y-Antares/hexo-theme-Antares
 
 customize:
     gravatar:
-        email: 
+        email: 2570984488@qq.com
     logo:
         enabled: true
         width: 50
@@ -27,11 +30,11 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: https://github.com/tzvetkov75/solar-theme-hexo
-        twitter: /
-        facebook: /
-        linkedin: /
-    post_count: 5
+        github: https://github.com/Y-Antares
+        weixin: /images/weixin.jpg
+        qq: /images/qq.jpg
+        tv-retro: https://space.bilibili.com/285931062
+    post_count: 20
     highlight: lightcode
 
 # keept it like this to add the root path (probably a bug)
@@ -39,7 +42,7 @@ root: ..
 
 solar:
     # factor between 0 (fast), 1(normal), 2(very slow)  
-    speed: 1
+    speed: 1.3
     sun_image: /images/sun.png
     earth_image: /images/earth.png
     jupiter_image: /images/jupiter.png
@@ -55,6 +58,8 @@ rss: false
 plugins:
     disqus_shortname: # Disqus Comments Shortname
     google_analytics: # enter the tracking ID for your Google Analytics
+    markdown-it-katex: # enable KaTeX support
+
 
 # Miscellaneous
 miscellaneous:
@@ -63,3 +68,23 @@ miscellaneous:
         fb_admins:
         twitter_id:
         google_plus:
+
+# 是否开启访问量统计功能(不蒜子)
+busuanzi:
+  enable: true
+
+copyright:
+  start_year: 2024
+  end_year: 
+
+highlight: paraiso-dark
+
+utterance:
+  enable: true
+
+# math equations
+math:
+  enable: true
+  per_page: true
+  specific: false
+  engine: mathjax
